@@ -27,12 +27,12 @@
       },
       {
         "name": "region",
-        "value": "us-south",
+        "value": "eu-ed",
         "type": "string"
       },
       {
         "name": "vpc_zone_names",
-        "value": ["us-south-1", "us-south-2", "us-south-3"],
+        "value": ["frankfurt-1", "frankfurt-2"],
         "type": "list(string)"
       },
       {
