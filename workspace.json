@@ -32,7 +32,7 @@
       },
       {
         "name": "vpc_zone_names",
-        "value": ["frankfurt-1", "frankfurt-2"],
+        "value": ["frankfurt-1", "frankfurt-2", "frankfurt-3"],
         "type": "list(string)"
       },
       {
