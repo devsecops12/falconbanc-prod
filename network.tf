@@ -37,6 +37,14 @@ resource "ibm_is_security_group_rule" "iac_iks_security_group_rule_tcp_k8s" {
   }
 }
 
+ }
+resource "ibm_tg_gateway" "new_tg_gw"{
+  name      = "front-office-tg"
+  location  = "eu-de"
+  global    =  true
+  resource_group="64474a4706f64480a1a25926de5f12dd"
+}
+
 resource "ibm_is_public_gateway" "iac_iks_gateway" {
     name  = "${var.project_name}-${var.environment}-gateway-${format("%02s", count.index)}"
     vpc   = ibm_is_vpc.iac_iks_vpc.id
