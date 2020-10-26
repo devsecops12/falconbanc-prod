@@ -38,6 +38,7 @@ resource "ibm_is_security_group_rule" "iac_iks_security_group_rule_tcp_k8s" {
 }
 
  }
+
 resource "ibm_tg_gateway" "new_tg_gw"{
   name      = "front-office-tg"
   location  = "eu-de"
